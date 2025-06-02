@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+  font-family: "kode Mono",monospace;
+}
+
+.HOME {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.HOME .overlap-wrapper {
+  background-color: #ffffff;
+  height: 982px;
+  overflow: hidden;
+  width: 1512px;
+}
+
+.HOME .overlap {
+  height: 982px;
+  left: -166px;
+  position: relative;
+  width: 1703px;
+}
+
+.HOME .rectangle {
+  background-color: #273345;
+  height: 179px;
+  left: 166px;
+  position: absolute;
+  top: 0;
+  width: 1537px;
+}
+
+.HOME .rectangle-2 {
+  background-color: #ffffff;
+  height: 454px;
+  left: 166px;
+  position: absolute;
+  top: 113px;
+  width: 1512px;
+}
+
+.HOME .adobestock {
+  height: 869px;
+  left: 166px;
+  object-fit: cover;
+  position: absolute;
+  top: 113px;
+  width: 1512px;
+}
+
+.HOME .rectangle-3 {
+  background-color: #efeae6;
+  box-shadow: 0px -1px 15px #00000069;
+  height: 324px;
+  left: 166px;
+  position: absolute;
+  top: 580px;
+  width: 1512px;
+}
+
+.HOME .rectangle-4 {
+  background-color: #273345;
+  height: 88px;
+  left: 166px;
+  position: absolute;
+  top: 894px;
+  width: 1512px;
+}
+
+.HOME .ellipse {
+  background-color: #273345;
+  border-radius: 51px / 47.5px;
+  height: 95px;
+  left: 871px;
+  position: absolute;
+  top: 874px;
+  width: 102px;
+}
+
+.HOME .adobestock-2 {
+  height: 56px;
+  left: 196px;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 92px;
+}
+
+.HOME .mask-group-6 {
+  height: 584px;
+  left: 692px;
+  position: absolute;
+  top: 89px;
+  width: 875px;
+}
+
+.HOME .developer-digital {
+  color: #273345;
+  font-family: "Kode Mono", Helvetica;
+  font-size: 46px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 178px;
+  width: 789px;
+}
+
+.HOME .text-wrapper-2 {
+  color: #808a92;
+  font-family: "Kode Mono", Helvetica;
+  font-size: 45px;
+  font-weight: 700;
+  left: 191px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 708px;
+  transform: rotate(-90.00deg);
+  width: 254px;
+}
+
+.HOME .social-2 {
+  background-image: url(./social-2-2.png) !important;
+  left: 1579px !important;
+  position: absolute !important;
+  top: 809px !important;
+}
+
+.HOME .vilander-costa {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 209px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 936px;
+  width: 151px;
+}
+
+.HOME .tel {
+  color: #ffffff;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 1456px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 921px;
+}
+
+.HOME .adobestock-3 {
+  height: 79px;
+  left: 1428px;
+  object-fit: cover;
+  position: absolute;
+  top: 22px;
+  width: 238px;
+}
+
+.HOME .text-wrapper-3 {
+  color: #121212;
+  font-family: "Kode Mono", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+  left: 258px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 19px;
+  white-space: nowrap;
+  width: 613px;
+}
+
+.HOME .VOLTAR-TOPO-instance {
+  background-image: url(./arrow-up-white-vazado-1-2.png) !important;
+  left: 897px !important;
+  position: absolute !important;
+  top: 873px !important;
+}
+
+.HOME .MENU-instance {
+  left: 280px !important;
+  position: absolute !important;
+  top: 451px !important;
+}
+
+.HOME .design-component-instance-node {
+  text-align: unset !important;
+}
+
+.HOME .MENU-2 {
+  left: -4976px !important;
+  top: 882px !important;
+}
+
+.HOME .MENU-3 {
+  left: 280px !important;
+  position: absolute !important;
+  top: 506px !important;
+}
+
+.HOME .MENU-4 {
+  left: -4976px !important;
+  top: 827px !important;
+}
+
+.HOME .MENU-5 {
+  left: 276px !important;
+  position: absolute !important;
+  top: 341px !important;
+}
+
+.HOME .MENU-6 {
+  left: -4972px !important;
+  top: 992px !important;
+}
+
+.HOME .MENU-7 {
+  left: 276px !important;
+  position: absolute !important;
+  top: 396px !important;
+}
+
+.HOME .MENU-8 {
+  left: -4972px !important;
+  top: 937px !important;
+}
+
+.HOME .card-1 {
+  left: 421px !important;
+  position: absolute !important;
+  top: 599px !important;
+}
+
+.HOME .card-2 {
+  left: 783px !important;
+  position: absolute !important;
+  top: 599px !important;
+}
+
+.HOME .card-instance {
+  left: 1146px !important;
+  position: absolute !important;
+  top: 599px !important;
+}
+
+.HOME .card-3-instance {
+  background-image: url(./mask-group-13.png) !important;
+}
