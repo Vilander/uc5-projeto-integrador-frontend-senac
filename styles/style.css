@@ -45,9 +45,10 @@
   width: 1512px;
 }
 
-.HOME .adobestock {
+.HOME .background {
   height: 869px;
   left: 166px;
+  color: black;
   object-fit: cover;
   position: absolute;
   top: 113px;
@@ -64,7 +65,7 @@
   width: 1512px;
 }
 
-.HOME .rectangle-4 {
+.rodape .rectangle-4 {
   background-color: #273345;
   height: 88px;
   left: 166px;
@@ -73,7 +74,7 @@
   width: 1512px;
 }
 
-.HOME .ellipse {
+.rodape .ellipse {
   background-color: #273345;
   border-radius: 51px / 47.5px;
   height: 95px;
@@ -83,7 +84,7 @@
   width: 102px;
 }
 
-.HOME .adobestock-2 {
+.HOME .icone-sup {
   height: 56px;
   left: 196px;
   object-fit: cover;
@@ -92,7 +93,7 @@
   width: 92px;
 }
 
-.HOME .mask-group-6 {
+.HOME .foto-destaque {
   height: 584px;
   left: 692px;
   position: absolute;
@@ -162,7 +163,7 @@
   top: 921px;
 }
 
-.HOME .adobestock-3 {
+.HOME .redes-topo {
   height: 79px;
   left: 1428px;
   object-fit: cover;
