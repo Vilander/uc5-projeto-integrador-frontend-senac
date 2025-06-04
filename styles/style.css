@@ -194,53 +194,47 @@
   top: 873px !important;
 }
 
-.HOME .MENU-instance {
-  left: 280px !important;
-  position: absolute !important;
-  top: 451px !important;
-}
-
 .HOME .design-component-instance-node {
   text-align: unset !important;
 }
 
-.HOME .MENU-2 {
-  left: -4976px !important;
-  top: 882px !important;
+.HOME .menus{
+  color: brown;
 }
 
-.HOME .MENU-3 {
+.HOME .MENU-blog {
+  left: 280px !important;
+  position: absolute !important;
+  top: 451px !important;
+  font-size: large;
+  font-weight: bold;
+}
+
+.HOME .MENU-contato {
   left: 280px !important;
   position: absolute !important;
   top: 506px !important;
+  font-size: large;
+  font-weight: bold;
 }
 
-.HOME .MENU-4 {
-  left: -4976px !important;
-  top: 827px !important;
-}
 
-.HOME .MENU-5 {
+.HOME .MENU-sobre {
   left: 276px !important;
   position: absolute !important;
   top: 341px !important;
+  font-size: large;
+  font-weight: bold;
 }
 
-.HOME .MENU-6 {
-  left: -4972px !important;
-  top: 992px !important;
-}
-
-.HOME .MENU-7 {
+.HOME .MENU-portfolio {
   left: 276px !important;
   position: absolute !important;
   top: 396px !important;
+  font-size: large;
+  font-weight: bold;
 }
 
-.HOME .MENU-8 {
-  left: -4972px !important;
-  top: 937px !important;
-}
 
 .HOME .card-1 {
   left: 421px !important;
