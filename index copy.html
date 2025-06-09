@@ -10,83 +10,84 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-  <header>
-    <div class="rectangle">
-      <div><img class="icone-sup" src="assets/logo_vertical_VC_white.png" alt="icone superior abre fecha"></div>
+
+  <header class="cabecalho-principal">
+    <div class="conteudo-cabecalho">
+      <div class="logo">
+        <a href="#"><img class="icone-sup" src="assets/logo_vertical_VC_white.png"
+            alt="logo principal cabecalho e home"></a>
+      </div>
       <div class="redes-topo">
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://www.linkedin.com/in/vilander-costa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/vilandercosta/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Vilander" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </header>
-  <main class="HOME">
-    <div class="overlap-wrapper">
-      <div class="overlap">
-        <img class="foto-destaque" src="assets/foto-perfil.png" alt="foto de destaque">
+  <div class="background-image"></div>
+  <main class="conteudo-principal">
+    <section class="conteudo-destaque">
+      <h1 class="developer-digital">
+        developer &<br>
+        digital marketing
+      </h1>
+      <nav class="menu-lateral">
+        <a href="#sobre">&lt;SOBRE MIM&gt;</a>
+        <a href="#portfolio">&lt;PORTFÓLIO&gt;</a>
+        <a href="#blog">&lt;BLOG&gt;</a>
+        <a href="#contato">&lt;CONTATO&gt;</a>
+      </nav>
 
 
+      <div class="perfil-destaque">
 
-        <div class="rectangle-3"></div>
-
-
-
-        <div class="developer-digital">
-          developer &<br>
-          digital marketing
-        </div>
-
-        <div class="text-wrapper-2">DESTAQUES</div>
-
-        <div class="social-2"></div>
-
-
-        <!-- <div class="text-wrapper-3">Vilander Costa</div> -->
-
-        <div class="VOLTAR-TOPO-instance"></div>
-
-        <!-- Simulação dos menus -->
-        <div class="menu-lateral">
-          <a href="#sobre">&lt;SOBRE MIM&gt;</a>
-          <a href="#portfolio">&lt;PORTFÓLIO&gt;</a>
-          <a href="#blog">&lt;BLOG&gt;</a>
-          <a href="#contato">&lt;CONTATO&gt;</a>
-        </div>
-
-        <!-- Simulação dos cards -->
-        <div class="cards-destaque">
-          <div class="card">
-            <img src="assets/card1.png" alt="...">
-            <p>Texto 1...</p>
-          </div>
-          <div class="card">
-            <img src="assets/card2.png" alt="...">
-            <p>Texto 2...</p>
-          </div>
-          <div class="card">
-            <img src="assets/card3.png" alt="...">
-            <p>Texto 3...</p>
-          </div>
-        </div>
-
+        <div><img class="foto-destaque" src="assets/foto-perfil.png" alt="foto de destaque"></div>
       </div>
-    </div>
-    <img class="background" src="/assets/AdobeStock_548491721.jpeg" alt="imagem de fundo branca com bolinhas">
-  </main>
-  <footer>
-    <div class="ellipse"></div>
-    <div class="rodape">
-      <p class="vilander-costa">© Vilander Costa 2025</p>
+    </section>
 
-      <p class="tel">
+    <section class="secao-destaque">
+      <div class="titulo-destaque">DESTAQUES</div>
+      <div class="cards-destaque">
+        <div class="card">
+          <a href="#"><img src="/assets/card1.webp" alt="Imagem do card 1">
+            <p class="texto-card">Fotografia, marketing ou desenvolvimento? Saiba mais sobre minhas experiências
+              profissionais e minhas formações.</p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#"><img src="/assets/card2.webp" alt="Imagem do card 2">
+            <p class="texto-card">Cada dia aperfeiçoar mais. Conheça um pouco do meu trabalho e projetos desenvolvidos.
+            </p>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#"><img src="/assets/card3.webp" alt="Imagem do card 3">
+            <p class="texto-card">Dicas de tecnologia e marketing digital e alguns eventos. Confira um pouco da minha
+              busca por mais conhecimento.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <aside id="WhatsApp">
+      <a href="https://wa.me/5519993223509?text=Olá,%20tudo%20bem?" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </aside>
+  </main>
+  <footer class="main-footer">
+    <div class="elipse"><a href="#"><img src="/assets/arrow-up-white-vazado.png" alt=""></a></div>
+    <div class="footer-conteudo">
+      <p class="vilander-costa">© Vilander Costa 2025</p>
+      <p class="infoContato">
         Tel: +55 19 99322.3509<br>
         e-mail: vilander.costa@gmail.com
       </p>
-    </div>
+     </div>
   </footer>
 
 </body>

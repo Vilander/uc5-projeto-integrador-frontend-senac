@@ -17,6 +17,24 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  display: none;
+  ;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
 .background-image {
   position: fixed;
   top: 0;
@@ -284,7 +302,8 @@ body {
   /* Empurra o rodapé para o final da página */
   width: 100%;
   height: 8vh;
-  position: relative;  /* Para o ícone do WhatsApp */
+  position: relative;
+  /* Para o ícone do WhatsApp */
 }
 
 .footer-conteudo {
@@ -292,19 +311,21 @@ body {
   justify-content: space-between;
   align-items: center;
   /* max-width: 1440px; */
-  margin: 0 auto;/* Centraliza o conteúdo */
+  margin: 0 auto;
+  /* Centraliza o conteúdo */
   padding: 1.5rem;
 }
 
 .elipse {
   position: absolute;
-  top: -55px; /* sobrepondo o topo do footer */
+  top: -55px;
+  /* sobrepondo o topo do footer */
   left: 50%;
   transform: translateX(-50%);
   width: 180px;
   height: 180px;
   background-color: #273345;
-  border-radius:50%;
+  border-radius: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -324,6 +345,11 @@ body {
   text-align: right;
   font-size: 1.5rem;
   line-height: 1.4;
+}
+
+.infoContato a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .whatsapp-float {
