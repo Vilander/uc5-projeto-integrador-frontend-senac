@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* Fundamental para controle de layout */
   font-family: "Kode Mono", monospace;
 }
 
@@ -146,7 +145,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #273345;
   z-index: 5;
@@ -173,19 +172,6 @@ h1 {
   padding-right: 25%;
   /* Espaço entre a foto e a borda */
 }
-
-/* .perfil-destaque::before {
-    content: '';
-    position: absolute;
-    background-color: #efeae6;
-    box-shadow: 0px -1px 15px rgba(0, 0, 0, 0.1);
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 330px;
-    z-index: 0;
-    border-radius: 10px;
-} */
 
 .foto-destaque {
   /* width: 1075px; */
@@ -280,17 +266,22 @@ h1 {
 .card img {
   max-width: 100%;
   height: 350px;
-  /* Altura fixa para as imagens dos cards */
   object-fit: cover;
   /* Garante que a imagem preencha o espaço sem distorção */
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
+.card a {
+  text-decoration: none;
+  ;
+}
+
 .texto-card {
   color: #555;
   font-size: 1.9rem;
   line-height: 1.5;
+  text-decoration: none;
 }
 
 /* Rodapé */
@@ -662,3 +653,105 @@ h1 {
   }
 
 }
+
+/* @media (max-width: 1920px) {
+  .redes-topo i {
+    font-size: 2.5rem;
+  }
+
+  .icone-sup {
+    height: 6rem;
+  }
+
+  .developer-digital {
+    font-size: 3.1rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: static;
+    margin-top: -20rem;
+  }
+
+  .menu-lateral {
+    position: static;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-top: 20rem;
+  }
+
+  .foto-destaque {
+    width: 145%;
+    max-width: 1800px;
+    margin-bottom: -175px;
+  }
+
+  .conteudo-principal {
+    padding-top: 1px;
+    margin-top: 0.2rem;
+  }
+
+  .card {
+    width: 30%;
+    height: 30vh;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 15vh;
+  }
+
+  .texto-card {
+    font-size: 0.8rem;
+  }
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-float i {
+    font-size: 2rem;
+  }
+
+
+  .elipse {
+    top: -25px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .elipse img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  .main-footer {
+    padding: 2rem;
+    margin-top: auto;
+    width: 100%;
+    height: 18vh;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.8rem;
+
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+} */
