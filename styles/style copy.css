@@ -1,272 +1,731 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 * {
-  font-family: "kode Mono", monospace;
-}
-body{
-  /* background-image: url(/assets/AdobeStock_548491721.jpeg); */
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: top center; 
-  background-size: cover;
-  max-width: 1920px;
-  
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
 }
 
-.HOME {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 50px;
-
-}
-
-/* .HOME .overlap-wrapper {
-  background-color: #ffffff;
-  height: 982px;
-  overflow: hidden;
-  max-width: 1920px;
-} */
-
-/* .HOME .overlap {
-  height: 100%;
-  left: -166px;
+body {
+  margin: 0;
   position: relative;
-  max-width: 1920px;
-} */
-
-/* .HOME .background {
-  object-fit: cover;
-  background-repeat: no-repeat;
-  position: static;
-  width: 1920px;
-  max-width: 100%
-} */
-
-.HOME .rectangle-3 {
-  background-color: #efeae6;
-  box-shadow: 0px -1px 15px #00000069;
-  height: 324px;
-  left: 166px;
-  position: absolute;
-  top: 580px;
-  width: 1512px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.rectangle {
+h1 {
+  display: none;
+  ;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/background-bolinhas.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* Cabeçalho */
+.cabecalho-principal {
   background-color: #273345;
-  display: flex;
   color: white;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo-cabecalho {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .icone-sup {
-  left: 5%;
-  position: static;
-  width: 20rem;
-  max-width: 70%;
-  top: 15px;
-  font-size: 48px;
-  opacity: 0.7;
-
+  height: 150px;
+  width: auto;
 }
 
+.icone-sup:hover {
+  opacity: 0.5;
+}
 
 .redes-topo {
-  left: 85%;
-  object-fit: cover;
-  position: static;
-  width: 20rem;
-  max-width: 70%;
-  top: 15px;
-  font-size: 48px;
-  opacity: 0.7;
-}
-
-.rodape {
-  background-color: #273345;
   display: flex;
-  color: white;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
+  gap: 1.5rem;
 }
 
-.ellipse {
-  background-color: #273345;
-  border-radius: 51px / 47.5px;
-  margin: auto 0;
-  height: 95px;
-  left: 50%;
+.redes-topo i {
+  font-size: 5rem;
+  color: white;
+  transition: color 0.3s ease;
+
+}
+
+.redes-topo i:hover {
+  opacity: 0.5;
+
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 2rem;
+}
+
+.conteudo-destaque {
   position: relative;
-  top: 78px;
-  width: 102px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.menu-lateral {
+  position: absolute;
+  left: 280px;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #273345;
+  z-index: 5;
+
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.menu-lateral a:hover {
+  color: #EFEAE6;
+}
+
+.perfil-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  padding-right: 25%;
 }
 
 .foto-destaque {
-  /* height: 584px; */
-  left: 692px;
-  position: absolute;
-  top: 55px;
-  width: 975px;
+  /* width: 1075px; */
+  height: auto;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  margin-bottom: -41px;
 }
 
-.HOME .developer-digital {
+.developer-digital {
   color: #273345;
   font-family: "Kode Mono", Helvetica;
-  font-size: 46px;
+  font-size: 70px;
   font-weight: 700;
-  left: 0;
+  left: 210px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 178px;
+  top: 2.5rem;
   width: 789px;
 }
 
-.HOME .text-wrapper-2 {
+.secao-destaque {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px -5px 15px 10px rgba(0, 0, 0, 0.05);
+  background-color: #efeae6;
+  bottom: 0;
+  height: auto;
+  z-index: 0;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.titulo-destaque {
   color: #808a92;
   font-family: "Kode Mono", Helvetica;
-  font-size: 45px;
+  font-size: 5rem;
   font-weight: 700;
   left: 191px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 708px;
+  /* top: 964px; */
+  /* margin-top: 250px; */
   transform: rotate(-90.00deg);
-  width: 254px;
+  /* width: 254px; */
+  z-index: 5;
 }
 
-.HOME .social-2 {
-  background-image: url(./social-2-2.png) !important;
-  left: 1579px !important;
-  position: absolute !important;
-  top: 809px !important;
+.cards-destaque {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
 }
 
-.HOME .vilander-costa {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 12px;
-  font-weight: 400;
-  left: 209px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 936px;
-  width: 151px;
-}
-
-.HOME .tel {
-  color: #ffffff;
-  font-family: "Inter-Regular", Helvetica;
-  font-size: 12px;
-  font-weight: 400;
-  left: 1456px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: right;
-  top: 921px;
-}
-
-.HOME .text-wrapper-3 {
-  color: #121212;
-  font-family: "Kode Mono", Helvetica;
-  font-size: 64px;
-  font-weight: 700;
-  left: 258px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 20%;
+  min-width: 280px;
+  padding: 1.5rem;
   text-align: center;
-  top: 19px;
-  white-space: nowrap;
-  width: 613px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35vh;
 }
 
-.HOME .VOLTAR-TOPO-instance {
-  background-image: url(./arrow-up-white-vazado-1-2.png) !important;
-  left: 897px !important;
-  position: absolute !important;
-  top: 873px !important;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.HOME .design-component-instance-node {
-  text-align: unset !important;
+.card img {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.HOME .menus {
-  color: brown;
+.card a {
+  text-decoration: none;
+  ;
 }
 
-.HOME .MENU-blog {
-  left: 280px !important;
-  position: absolute !important;
-  top: 451px !important;
-  font-size: large;
-  font-weight: bold;
+.texto-card {
+  color: #555;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
-.HOME .MENU-contato {
-  left: 280px !important;
-  position: absolute !important;
-  top: 506px !important;
-  font-size: large;
-  font-weight: bold;
+/* Rodapé */
+.main-footer {
+  background-color: #273345;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: auto;
+  width: 100%;
+  height: 8vh;
+  position: relative;
 }
 
-
-.HOME .MENU-sobre {
-  left: 276px !important;
-  position: absolute !important;
-  top: 341px !important;
-  font-size: large;
-  font-weight: bold;
+.footer-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
-.HOME .MENU-portfolio {
-  left: 276px !important;
-  position: absolute !important;
-  top: 396px !important;
-  font-size: large;
-  font-weight: bold;
+.elipse {
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+  background-color: #273345;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 10;
 }
 
-
-.HOME .card-1 {
-  left: 421px !important;
-  position: absolute !important;
-  top: 599px !important;
+.elipse img {
+  width: 5rem;
+  height: auto;
 }
 
-.HOME .card-2 {
-  left: 783px !important;
-  position: absolute !important;
-  top: 599px !important;
+.vilander-costa {
+  font-size: 1.1rem;
 }
 
-.HOME .card-instance {
-  left: 1146px !important;
-  position: absolute !important;
-  top: 599px !important;
+.infoContato {
+  text-align: right;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }
 
-.HOME .card-3-instance {
-  background-image: url(./mask-group-13.png) !important;
+.infoContato a {
+  color: #fff;
+  text-decoration: none;
 }
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Media queries para responsividade */
+
+@media (max-width: 1024px) {
+  .redes-topo i {
+    font-size: 3rem;
+  }
+
+  .icone-sup {
+    height: 70px;
+  }
+
+  .developer-digital {
+    font-size: 4rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .conteudo-principal {
+    padding-top: 2px;
+    margin-top: -1rem;
+  }
+
+  .menu-lateral {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .conteudo-destaque {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .perfil-destaque {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .foto-destaque {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .cards-destaque {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .texto-card {
+    font-size: 1.5rem;
+  }
+
+
+  .titulo-destaque {
+    position: static;
+    transform: none;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .elipse {
+    top: -30px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .elipse img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .main-footer {
+    padding: 2rem;
+    margin-top: auto;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .redes-topo i {
+    font-size: 2rem;
+  }
+
+  .icone-sup {
+    height: 60px;
+  }
+
+  .developer-digital {
+    font-size: 2.1rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: static;
+    margin-top: 8rem;
+  }
+
+  .foto-destaque {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .conteudo-principal {
+    padding-top: 1px;
+    margin-top: -8rem;
+  }
+
+  .texto-card {
+    font-size: 1.2rem;
+  }
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-float i {
+    font-size: 2rem;
+  }
+
+  .elipse {
+    top: -30px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .elipse img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  .main-footer {
+    padding: 2rem;
+    margin-top: auto;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .redes-topo i {
+    font-size: 1.5rem;
+  }
+
+  .icone-sup {
+    height: 50px;
+  }
+
+  .developer-digital {
+    font-size: 2.1rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .foto-destaque {
+    width: 115%;
+    max-width: 900px;
+  }
+
+  .conteudo-principal {
+    padding-top: 1px;
+    margin-top: -8rem;
+  }
+
+  .card {
+    width: 30%;
+    height: 30vh;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 15vh;
+  }
+
+  .texto-card {
+    font-size: 0.8rem;
+  }
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-float i {
+    font-size: 2rem;
+  }
+
+
+  .elipse {
+    top: -25px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .elipse img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  .main-footer {
+    padding: 2rem;
+    margin-top: auto;
+    width: 100%;
+    height: 18vh;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.8rem;
+
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+}
+
+/* @media (max-width: 1920px) {
+  .redes-topo i {
+    font-size: 2.5rem;
+  }
+
+  .icone-sup {
+    height: 6rem;
+  }
+
+  .developer-digital {
+    font-size: 3.1rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: static;
+    margin-top: -20rem;
+  }
+
+  .menu-lateral {
+    position: static;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-top: 20rem;
+  }
+
+  .foto-destaque {
+    width: 145%;
+    max-width: 1800px;
+    margin-bottom: -175px;
+  }
+
+  .conteudo-principal {
+    padding-top: 1px;
+    margin-top: 0.2rem;
+  }
+
+  .card {
+    width: 30%;
+    height: 30vh;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 15vh;
+  }
+
+  .texto-card {
+    font-size: 0.8rem;
+  }
+
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
+  }
+
+  .whatsapp-float i {
+    font-size: 2rem;
+  }
+
+
+  .elipse {
+    top: -25px;
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .elipse img {
+    width: 3rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2rem;
+  }
+
+  .main-footer {
+    padding: 2rem;
+    margin-top: auto;
+    width: 100%;
+    height: 18vh;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.8rem;
+
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+} */
