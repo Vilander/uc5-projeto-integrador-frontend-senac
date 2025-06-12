@@ -6,6 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kode Mono", monospace;
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;}
 }
 
 body {
@@ -14,11 +19,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  
 }
 
-h1 {
+
+
+/* h1 h2 h3 {
   display: none;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -39,7 +47,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/background-bolinhas.webp');
+  /* background-image: url("/assets/background-bolinhas.webp"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,7 +188,7 @@ h1 {
   z-index: 2;
   border-radius: 10px;
   margin-bottom: -3rem;
-  left: 41rem;
+  left: 35rem;
 }
 
 .secao-destaque {
@@ -238,7 +246,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 45vh;
+  /* height: 45vh; */
 }
 
 .card:hover {
@@ -248,7 +256,6 @@ h1 {
 
 .card img {
   max-width: 100%;
-  /* Alterado de height: 350px para max-height para permitir escala */
   max-height: 250px;
   object-fit: cover;
   border-radius: 8px;
@@ -261,7 +268,6 @@ h1 {
 
 .texto-card {
   color: #555;
-  /* Alterado de 1.9rem para 1.2rem para melhor escala em 100% zoom */
   font-size: 1.2rem;
   line-height: 1.5;
   text-decoration: none;
@@ -330,7 +336,6 @@ h1 {
   bottom: 110px;
   right: 20px;
   z-index: 1000;
-  /* Mantido px para o botão flutuante, que geralmente tem um tamanho fixo */
   width: 80px;
   height: 80px;
   background-color: #25d366;
@@ -356,7 +361,42 @@ h1 {
 /* Media queries para responsividade */
 
 @media (max-width: 1024px) {
-  .redes-topo i {
+
+  .developer-digital {
+    left: -17rem;
+  }
+
+  .menu-lateral {
+    left: 4rem;
+    margin-top: 8rem;
+  }
+
+  .foto-destaque {
+    left: 261px;
+  }
+
+  .titulo-destaque {
+    position: static;
+    transform: rotate(0.00deg);
+  }
+
+  .cards-destaque {
+    flex-wrap: nowrap;
+
+  }
+
+  .main-footer {
+    height: auto;
+  }
+
+  .footer-conteudo {
+    padding: 0.1em;
+  }
+}
+
+/**/
+
+/* .redes-topo i {
     font-size: 2.5rem;
 
   }
@@ -394,7 +434,6 @@ h1 {
     align-items: center;
     text-align: center;
     min-height: 60vh;
-    /* Ajustado para telas menores */
   }
 
   .perfil-destaque {
@@ -422,13 +461,11 @@ h1 {
 
   }
 
-
   .titulo-destaque {
     position: static;
     transform: none;
     text-align: center;
     font-size: 2.5rem;
-
     margin-bottom: 1rem;
   }
 
@@ -440,16 +477,13 @@ h1 {
 
   .elipse {
     top: -3rem;
-
     width: 8rem;
-
     height: 8rem;
 
   }
 
   .elipse img {
     width: 2.5rem;
-
     height: auto;
   }
 
@@ -458,111 +492,86 @@ h1 {
     margin-top: auto;
     width: 100%;
     height: 18vh;
-    /* Ajustado para telas menores */
   }
 
   .infoContato {
     text-align: center;
     font-size: 1rem;
-
-
   }
 
   .vilander-costa {
     text-align: center;
     font-size: 1rem;
-
     padding-bottom: 1rem;
+  } 
+}*/
+
+@media (max-width: 910px) {
+  .developer-digital {
+    left: -10rem;
+  }
+
+  .cards-destaque {
+    flex-wrap: wrap;
+  }
+
+  .infoContato {
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 845px) {
+  .developer-digital {
+    left: -7rem;
+  }
+
+  .infoContato {
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    z-index: 100;
   }
 }
 
 @media (max-width: 600px) {
-  .redes-topo i {
-    font-size: 2rem;
-  }
-
-  .icone-sup {
-    height: 50px;
+  .foto-destaque {
+    left: 10rem;
+    max-width: 600px;
   }
 
   .developer-digital {
-    font-size: 2rem;
-
-    padding-bottom: 1.5rem;
-
-    width: 100%;
-    text-align: center;
-    position: static;
-    margin-top: 4rem;
-    /* Ajustado para telas menores */
-  }
-
-  .foto-destaque {
-    width: 100%;
-    max-width: 700px;
-
-  }
-
-  .conteudo-principal {
-    padding-top: 1px;
-    margin-top: -4rem;
-    /* Ajustado para telas menores */
-  }
-
-  .texto-card {
-    font-size: 1rem;
-
-  }
-
-  .whatsapp-float {
-    width: 60px;
-    height: 60px;
-  }
-
-  .whatsapp-float i {
-    font-size: 2rem;
+    left: -6rem;
+    font-size: 2.5rem;
+    padding-bottom: 4rem;
   }
 
   .elipse {
-    top: -2.5rem;
-
-    width: 7rem;
-
-    height: 7rem;
-
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
   }
 
   .elipse img {
     width: 2.5rem;
-    height: auto;
-  }
-
-  .footer-conteudo {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.2rem;
-  }
-
-  .main-footer {
-    padding: 1.5rem;
-
-    margin-top: auto;
-    width: 100%;
-    height: 15vh;
-
   }
 
   .infoContato {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.7rem;
+    z-index: 100;
   }
 
   .vilander-costa {
     text-align: center;
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -576,7 +585,7 @@ h1 {
   }
 
   .developer-digital {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
     width: 100%;
     text-align: center;
@@ -585,9 +594,9 @@ h1 {
   }
 
   .foto-destaque {
-    width: 115%;
+    width: 125%;
     max-width: 25rem;
-    left: auto;
+    left: 7rem;
   }
 
   .conteudo-principal {
@@ -597,7 +606,6 @@ h1 {
   }
 
   .conteudo-destaque {
-    flex-direction: column;
     align-items: center;
     text-align: center;
     min-height: 60vh;
@@ -624,10 +632,19 @@ h1 {
     padding-top: 5px;
   }
 
+  .titulo-destaque {
+    position: static;
+    transform: rotate(0.00deg);
+  }
+
   .card {
     width: 90%;
     height: auto;
 
+  }
+
+  .cards-destaque {
+    flex-wrap: wrap;
   }
 
   .card img {
@@ -670,15 +687,15 @@ h1 {
 
   .main-footer {
     padding: 1rem;
-
     margin-top: auto;
     width: 100%;
-    height: 12vh;
+    height: auto;
   }
 
   .infoContato {
     text-align: center;
     font-size: 0.7rem;
+    z-index: 100;
   }
 
   .vilander-costa {
@@ -687,5 +704,4 @@ h1 {
     padding-bottom: 0.5rem;
     z-index: 100;
   }
-
 }
