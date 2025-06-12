@@ -6,11 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kode Mono", monospace;
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;}
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 
@@ -134,14 +136,14 @@ body {
 .developer-digital {
   color: #273345;
   font-family: "Kode Mono", Helvetica;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   position: relative;
   text-align: right;
   width: 100%;
   margin-top: 1rem;
   line-height: normal;
-  left: -19rem;
+  /* left: -10rem; */
   /* top: 1.5rem; */
 }
 
@@ -150,11 +152,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #273345;
   z-index: 5;
-  margin-top: 2rem;
+  margin-top: 10rem;
   align-self: center;
   justify-content: left;
   flex-wrap: wrap;
@@ -188,7 +190,7 @@ body {
   z-index: 2;
   border-radius: 10px;
   margin-bottom: -3rem;
-  left: 35rem;
+  left: 45rem;
 }
 
 .secao-destaque {
@@ -360,6 +362,50 @@ body {
 
 /* Media queries para responsividade */
 
+/* Tamanhos de tela comuns
+Móvel: 360 x 640
+Móvel: 375 x 667
+Móvel: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tabuleiro: 768 x 1024
+Portátil: 1366 x 768
+Laptop ou desktop de alta resolução: 1920 x 1080 */
+
+@media (max-width: 1366px) {
+
+  .developer-digital {
+    left: -17rem;
+  }
+
+  .menu-lateral {
+    left: 4rem;
+    margin-top: 8rem;
+  }
+
+  .foto-destaque {
+    left: 261px;
+  }
+
+  .titulo-destaque {
+    position: static;
+    transform: rotate(0.00deg);
+  }
+
+  .cards-destaque {
+    flex-wrap: nowrap;
+
+  }
+
+  .main-footer {
+    height: auto;
+  }
+
+  .footer-conteudo {
+    padding: 0.1em;
+  }
+}
+
 @media (max-width: 1024px) {
 
   .developer-digital {
@@ -394,118 +440,6 @@ body {
   }
 }
 
-/**/
-
-/* .redes-topo i {
-    font-size: 2.5rem;
-
-  }
-
-  .icone-sup {
-    height: 60px;
-
-  }
-
-  .developer-digital {
-    font-size: 3rem;
-
-    width: 100%;
-    text-align: center;
-    position: static;
-    margin-top: 1rem;
-  }
-
-  .conteudo-principal {
-    padding-top: 2px;
-    margin-top: -1rem;
-  }
-
-  .menu-lateral {
-    position: static;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .conteudo-destaque {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-height: 60vh;
-  }
-
-  .perfil-destaque {
-    padding-right: 0;
-    align-items: center;
-  }
-
-  .foto-destaque {
-    width: 100%;
-    max-width: 1200px;
-  }
-
-  .cards-destaque {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-    height: auto;
-  }
-
-  .texto-card {
-    font-size: 1.2rem;
-
-  }
-
-  .titulo-destaque {
-    position: static;
-    transform: none;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .footer-conteudo {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .elipse {
-    top: -3rem;
-    width: 8rem;
-    height: 8rem;
-
-  }
-
-  .elipse img {
-    width: 2.5rem;
-    height: auto;
-  }
-
-  .main-footer {
-    padding: 2rem;
-    margin-top: auto;
-    width: 100%;
-    height: 18vh;
-  }
-
-  .infoContato {
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .vilander-costa {
-    text-align: center;
-    font-size: 1rem;
-    padding-bottom: 1rem;
-  } 
-}*/
-
 @media (max-width: 910px) {
   .developer-digital {
     left: -10rem;
@@ -534,6 +468,80 @@ body {
   }
 
   .vilander-costa {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 785px) {
+  .foto-destaque {
+    left: 12rem;
+    max-width: 800px;
+    top: 2rem;
+  }
+
+  .developer-digital {
+    left: -6rem;
+    font-size: 3.8rem;
+    padding-bottom: 4rem;
+  }
+
+  .elipse {
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
+  }
+
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .foto-destaque {
+    left: 10rem;
+    max-width: 800px;
+    top: 2rem;
+  }
+
+  .developer-digital {
+    left: -6rem;
+    font-size: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .elipse {
+    width: 4rem;
+    height: 4rem;
+    top: -1rem;
+  }
+
+  .elipse img {
+    width: 2.5rem;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
     z-index: 100;
   }
 }
@@ -572,6 +580,7 @@ body {
     padding-bottom: 0.5rem;
     z-index: 100;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -617,6 +626,141 @@ body {
     font-size: 1.5rem;
     padding-bottom: 3rem;
     align-items: center;
+    margin-top: 2rem;
+  }
+
+  .menu-lateral a {
+    color: #fff;
+    width: 15rem;
+    text-align: center;
+  }
+
+  .botao-menu {
+    background-color: #273345;
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 5px;
+  }
+
+  .titulo-destaque {
+    position: static;
+    transform: rotate(0.00deg);
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+
+  }
+
+  .cards-destaque {
+    flex-wrap: wrap;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .texto-card {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 90px;
+    right: 15px;
+  }
+
+  .whatsapp-float i {
+    font-size: 1.8rem;
+  }
+
+
+  .elipse {
+    top: -1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .elipse img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.1rem;
+  }
+
+  .main-footer {
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .infoContato {
+    text-align: center;
+    font-size: 0.7rem;
+    z-index: 100;
+  }
+
+  .vilander-costa {
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+    z-index: 100;
+  }
+}
+
+@media (max-width: 375px) {
+  .redes-topo i {
+    font-size: 1.5rem;
+  }
+
+  .icone-sup {
+    height: 40px;
+
+  }
+
+  .developer-digital {
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .foto-destaque {
+    width: 145%;
+    max-width: 35rem;
+    left: 6rem;
+    top:0.1rem;
+  }
+
+  .conteudo-principal {
+    padding-top: 1px;
+    margin-top: -3rem;
+
+  }
+
+  .conteudo-destaque {
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+  }
+
+  .menu-lateral {
+    position: static;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    align-items: center;
+    margin-top: 2rem;
   }
 
   .menu-lateral a {
