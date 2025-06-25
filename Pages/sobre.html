@@ -60,9 +60,11 @@
                   &lt;SOBRE MIM&gt;
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#bio-pessoal">Hello Word</a></li>
+                  <li><a class="dropdown-item" href="#formação-academica">Formação Acadêmica</a></li>
+                  <li><a class="dropdown-item" href="#">Cursos complementares</a></li>
+                  <li><a class="dropdown-item" href="#">Habilidade Técnicas</a></li>
+                  <li><a class="dropdown-item" href="#">Experiências Profissionais</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -119,10 +121,15 @@
   <main class="conteudo-principal">
 
     <!-- ACIMA OK-->
-     <section class="bio-pessoal">
-       <picture><img src="../assets/familia.webp" alt="Familia de vilander"></picture>
+     <section id="bio-pessoal">
+      <picture>
+        <source media="(max-width: 480px)" srcset="../assets/IMG_1260_P.png">
+        <source media="(max-width: 768px)" srcset="../assets/IMG_1260_M.png">
+        <img src="../assets/IMG_1260.png" alt="Família de Vilander">
+      </picture>
+       <!-- <picture><img src="../assets/IMG_1260.png" alt="Familia de vilander"></picture> -->
        <div>
-         <h1>&#10074; Hello World...</h1>
+         <h1>&#10074;Hello World...</h1>
          <p>Olá mundo,
           Sou Vilander, nascido em novembro de 1986, casado, pai de três filhos e dois cachorros. Meu maior prazer é estar com com todos eles curtindo cada momento juntos.
           Atualmente, estou em transição de carreira para a área de Tecnologia, cursando Ciência de Dados na Univesp e Técnico de Informática para Internet no Senac, com foco em desenvolvimento  . Tenho experiência anterior em marketing, design gráfico e gestão de equipes, habilidades que hoje somo ao meu aprendizado em programação, análise de dados e desenvolvimento web.
@@ -130,18 +137,34 @@
        </div>
      </section>
 
-     <section class="secao personalizada">
+     <section id="formação-academica" class="secao personalizada">
   <div class="conteudo">
-    <h2>&#10074; Sobre Mim</h2>
-    <p>
-      Sou movido por desafios e pela constante evolução. Desde minha transição de carreira para tecnologia, venho me dedicando com afinco a aprender, desenvolver projetos e aplicar na prática tudo o que estudo. Sou comunicativo, gosto de ajudar e acredito no poder do trabalho colaborativo.
-    </p>
+    <h2>&#10074;Formação Acadêmica...</h2>
+    
+    <div class="faculdade">
+      <img src="../assets/univesp.png" alt="logo univesp">
+      <p>Bacharel em Ciência de Dados – UNIVESP (cursando)</p>
+    </div>
+    <div class="faculdade">
+      <img src="../assets/univesp.png" alt="logo univesp">
+      <p>Bacharel em técnico em informática - ênfase em análise de dados (dupla certificação) – UNIVESP</p>
+    </div>
+    <div class="faculdade">
+      <img src="../assets/senac.png" alt="logo senac">
+      <p>Técnico em Informática para Internet – SENAC (cursando)<br></p>
+    </div>
+    <div class="faculdade">
+      <img src="../assets/unisal.webp" alt="">
+      <p>Graduação em Publicidade e Propaganda<br></p>
+    </div>
+    
+    
   </div>
 </section>
 
 <section class="secao personalizada">
   <div class="conteudo">
-    <h2>&#10074; Formação Acadêmica</h2>
+    <h2>&#10074;Cursos Complementares...</h2>
     <p>
       - Ciência de Dados – UNIVESP (cursando)<br>
       - Técnico em Informática para Internet – SENAC (cursando)<br>
@@ -153,17 +176,28 @@
 
 <section class="secao personalizada">
   <div class="conteudo">
-    <h2>&#10074; Habilidades Técnicas</h2>
+    <h2>&#10074;Skills...</h2>
     <ul>
       <li>HTML5, CSS3, JavaScript (iniciando)</li>
-      <li>Python, Flask, Pandas</li>
+      <li>Python, Java (básico)</li>
       <li>Git e GitHub</li>
       <li>UX/UI básico, Canva, Photoshop</li>
       <li>Boa comunicação e trabalho em equipe</li>
     </ul>
   </div>
 </section>
-     
+
+<section class="secao personalizada">
+  <div class="conteudo">
+    <h2>&#10074;Experências Profissionais...</h2>
+    <ul>
+      <li>Despachante Ajax</li>
+      <li>School Picture</li>
+      <li>Safra Bag</li>
+      <li>School Picture & Conquista Formaturas</li>
+    </ul>
+  </div>
+</section>
     
 
 
