@@ -372,6 +372,25 @@ Tabuleiro: 768 x 1024
 Portátil: 1366 x 768
 Laptop ou desktop de alta resolução: 1920 x 1080 */
 
+@media (max-width: 1496px) {
+  .conteudo-destaque{
+    padding: auto;
+  }
+  
+  .developer-digital {
+    left: -15rem;
+  }
+
+  .menu-lateral {
+    left: 2rem;
+    margin-top: 8rem;
+  }
+
+  .foto-destaque {
+    left: 23rem;
+  }
+}
+
 @media (max-width: 1366px) {
 
   .developer-digital {
