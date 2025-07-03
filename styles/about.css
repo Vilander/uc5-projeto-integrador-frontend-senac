@@ -1,38 +1,30 @@
+.navbar-toggler,
 .navbar-toggler-icon {
-  filter: invert(50%) sepia(100%) saturate(60%) hue-rotate(180deg);
-}
-
-.navbar-toggler {
   filter: invert(50%) sepia(100%) saturate(60%) hue-rotate(180deg);
 }
 
 #bio-pessoal {
   display: flex;
-  flex-direction: initial;
-  background-color: #ffffffc4;
-  border-radius: 5rem;
-  box-shadow: 13px 10px 20px 3px #9090907c;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff37;
+  border-radius: 1rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
   width: 95vw;
-  height: auto;
   padding: 4rem 6rem;
   text-align: center;
-  margin: 15rem auto auto;
-  position: relative;
-  transform: none;
-  top: auto;
-  left: auto;
+  margin: 15rem auto 0;
   gap: 5rem;
   z-index: 1;
 }
 
 #bio-pessoal picture img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   border-radius: 12px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: block;
   object-fit: cover;
 }
@@ -51,12 +43,16 @@
   text-align: justify;
 }
 
+#bio-pessoal div {
+  flex: 1 1 300px;
+}
+
 .secao.personalizada {
   width: 95vw;
-  margin: 4rem auto;
+  margin: 5rem auto 0;
   padding: 3rem 4rem;
-  background-color: #ffffffc4;
-  border-radius: 5rem;
+  background-color: #ffffff37;
+  border-radius: 1rem;
   box-shadow: 13px 10px 20px 3px #9090907c;
   text-align: center;
   color: #273345;
@@ -71,6 +67,7 @@
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #273345;
+  text-align: right;
 }
 
 .secao.personalizada p,
@@ -82,7 +79,8 @@
 
 .secao.personalizada ul {
   list-style: none;
-  padding: 0;
+  padding: 0 auto; 
+  text-align: left;
 }
 
 .secao.personalizada ul li::before {
@@ -91,38 +89,55 @@
   margin-right: 0.5rem;
 }
 
-#bio-pessoal {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-#bio-pessoal picture img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  display: block;
-  object-fit: cover;
-}
-
-#bio-pessoal div {
-  flex: 1 1 300px;
+.secao.personalizada ul .sub_li::before {
+  content: "↪ ";
+  color: #0e2741;
+  margin-right: 0.5rem;
 }
 
 .faculdade {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
   align-items: center;
   background-color: #EFEAE6;
   border-radius: 0.5rem;
   box-shadow: 13px 10px 20px 3px #9090907c;
   margin: 1rem auto;
+  padding: 1rem;
+}
 
+.faculdade img {
+  max-width: 100%;
+  height: 60px;
+  margin: 1rem;
+}
+
+#skills{
+  display: flex;
+}
+
+#skills img{
+  max-width: 100%;
+  height: 100vh;
+}
+
+.hab_soft li{
+  margin: 2.1rem;
+}
+
+.habilidades{
+  display: flex;
+}
+
+.hard_skill{
+  margin-bottom: 2rem;
+}
+
+.soft_skill{
+  margin-top: 2rem;
+}
+
+#CLT{
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 768px) {
