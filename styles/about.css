@@ -140,6 +140,10 @@
   margin-bottom: 5rem;
 }
 
+#CLT .faculdade{
+  justify-content: space-evenly;
+}
+
 @media (max-width: 768px) {
   #bio-pessoal {
     flex-direction: column;
