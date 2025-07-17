@@ -79,7 +79,7 @@
 
 .secao.personalizada ul {
   list-style: none;
-  padding: 0 auto; 
+  padding: 0 auto;
   text-align: left;
 }
 
@@ -111,37 +111,97 @@
   margin: 1rem;
 }
 
-#skills{
+#skills {
   display: flex;
 }
 
-#skills img{
+#skills img {
   max-width: 100%;
   height: 100vh;
 }
 
-.hab_soft li{
+.hab_soft li {
   margin: 2.1rem;
 }
 
-.habilidades{
+.habilidades {
   display: flex;
 }
 
-.hard_skill{
+.hard_skill {
   margin-bottom: 2rem;
 }
 
-.soft_skill{
+.soft_skill {
   margin-top: 2rem;
 }
 
-#CLT{
+#CLT {
   margin-bottom: 5rem;
 }
 
-#CLT .faculdade{
+#CLT .faculdade {
   justify-content: space-evenly;
+}
+
+#formulario {
+  margin-top: 15rem;
+}
+
+.formulario-contato .btn-success{
+  background-color: #273345;
+  border: #333;
+}
+
+.formulario-contato .btn-success:hover{
+  background-color: #08439c;
+}
+
+.redes_sociais {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+
+}
+
+.redes_sociais img {
+  width: 3.5rem;
+}
+
+.cv-download {
+  display: flex;
+  align-items: center;
+  background-color: #EFEAE6;
+  border-radius: 0.5rem;
+  box-shadow: 13px 10px 20px 3px #9090907c;
+  margin: 1rem auto;
+  padding: 1rem;
+  justify-content: center;
+  font-size: larger;
+}
+
+.cv-download img {
+  max-width: 100%;
+  height: 2rem;
+}
+
+.cv-download a {
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: bold;
+  color: #273345;
+}
+
+.cv-download a:hover {
+  font-size: xx-large;
+  color: #021e3b;
+}
+
+#curriculo {
+  margin-bottom: 5rem;
 }
 
 @media (max-width: 768px) {

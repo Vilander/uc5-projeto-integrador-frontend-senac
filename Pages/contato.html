@@ -100,7 +100,7 @@
                   <li><a class="dropdown-item" href="#">Download Currículo</a></li>
                 </ul>
               </li>
-              
+
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Digite aqui..." aria-label="Search" />
@@ -120,72 +120,69 @@
 
     <!-- ACIMA OK-->
 
-    <section id="cursos" class="secao personalizada">
+    <section id="formulario" class="secao personalizada">
       <div class="conteudo">
-        <h2>&#10074;Projetos DEV...</h2>
+        <h2>&#10074;Fale Comigo...</h2>
+        <div class="formulario-contato">
+          <form>
 
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/card2.webp" height="600vh" class="d-block w-100" alt="...">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" placeholder="Digite seu nome" class="form-control" id="nome" required>
             </div>
-            <div class="carousel-item">
-              <img src="../assets/AdobeStock_295853718.jpeg" height="600" class="d-block w-100" alt="...">
+
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" placeholder="Digite seu melhor e-mail" class="form-control" id="email" required>
             </div>
-            <div class="carousel-item">
-              <img src="../assets/AdobeStock_392257552.jpeg" height="600" class="d-block w-100" alt="...">
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="tel" placeholder="(00)00000-0000" class="form-control" id="telefone" required>
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" placeholder="Digite sua mensagem..." rows="5"
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success" >Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="rede" class="secao personalizada">
+      <div class="conteudo">
+        <h2>&#10074;Minhas Redes...</h2>
+        <div class="redes_sociais">
+          <a href="https://www.instagram.com/vilandercosta/"><img src="../assets/icons8-instagram.gif"
+              alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/vilander-costa/"><img src="../assets/icons8-linkedin-2.gif"
+              alt="Instagram"></a>
+          <a href="https://github.com/Vilander"><img src="../assets/icons8-github.gif" alt="Instagram"></a>
         </div>
 
       </div>
     </section>
 
 
-    <section id="cursos" class="secao personalizada">
+    <section id="curriculo" class="secao personalizada">
       <div class="conteudo">
-        <h2>&#10074;Marketing Digital...</h2>
-
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/card2.webp" height="600vh" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/AdobeStock_295853718.jpeg" height="600" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/AdobeStock_392257552.jpeg" height="600" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <h2>&#10074;Meu Currículo...</h2>
+        <div class="cv-download">
+          <img src="../assets/—Pngtree—file download icon_4719240.png" alt="download">
+          <a href="../assets/CV_TI_Vilander Costa_2025.pdf" download="CV_TI_Vilander Costa_2025.pdf">Download CV</a>
+          
         </div>
 
       </div>
     </section>
 
-
-
-
+    
     <!-- Abaixo ok-->
     <aside id="WhatsApp" aria-label="Contato pelo WhatsApp">
       <h2 class="visually-hidden">Fale comigo pelo WhatsApp</h2>
