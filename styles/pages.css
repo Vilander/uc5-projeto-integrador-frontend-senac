@@ -88,9 +88,8 @@
     justify-content: space-evenly;
 }
 
-#DEV,
-#MKT {
-    margin-top: var(--spacing-xxxl);
+#DEV {
+    margin-top: 12rem;
 }
 
 #formulario {
@@ -153,5 +152,30 @@
     margin: 12rem auto;
     padding: 1rem;
     text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev {
+  left: 1rem; 
+}
+
+.carousel-control-next {
+  right: 1rem; 
 }
 
