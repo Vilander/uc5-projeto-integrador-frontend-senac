@@ -1,0 +1,126 @@
+#bio-pessoal {
+    margin-top: 12rem;
+}
+
+/* #bio-pessoal picture img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--spacing-md);
+    display: block;
+    object-fit: cover;
+}
+
+#bio-pessoal h1 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    text-align: right;
+}
+
+#bio-pessoal p {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+#bio-pessoal>div {
+    flex: 1 1 300px;
+} */
+
+#skills .habilidades {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+/* #skills .habilidades.hab_soft {
+    flex-direction: row-reverse;
+} */
+
+#skills img {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.hard_skill,
+.soft_skill {
+    margin-bottom: var(--spacing-xl);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.soft_skill {
+    margin-top: var(--spacing-xl);
+}
+
+#CLT .info-card {
+    justify-content: space-evenly;
+}
+
+#DEV,
+#MKT {
+    margin-top: var(--spacing-xxxl);
+}
+
+#formulario {
+    margin-top: var(--spacing-xxxl);
+}
+
+.formulario-contato .btn-success {
+    background-color: var(--primary-color);
+    border: var(--text-color);
+}
+
+.formulario-contato .btn-success:hover {
+    background-color: var(--secondary-color);
+}
+
+.redes_sociais {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: var(--spacing-xl);
+}
+
+.redes_sociais img {
+    width: 3.5rem;
+}
+
+.cv-download {
+    justify-content: center;
+    font-size: var(--font-size-lg);
+}
+
+.cv-download img {
+    max-width: 100%;
+    height: 2rem;
+}
+
+.cv-download a {
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.cv-download a:hover {
+    font-size: xx-large;
+    color: var(--secondary-color);
+}
+
+#curriculo {
+    margin-bottom: var(--spacing-xxxl);
+}
+
+#blog-content {
+    margin: 12rem auto;
+    padding: 1rem;
+    text-align: center;
+}

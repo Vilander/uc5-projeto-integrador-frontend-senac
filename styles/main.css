@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #273345;
+    --secondary-color: #08439c;
+    --accent-color: #007bff;
+    --text-color: #333;
+    --light-bg: #ffffff37;
+    --light-grey: #EFEAE6;
+    --shadow-color: #9090907c;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    --spacing-xxxl: 5rem;
+
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 12px;
+
+    --font-size-base: 1.4rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.2rem;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+    filter: invert(50%) sepia(100%) saturate(60%) hue-rotate(180deg);
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-section {
+    width: 95vw;
+    margin: var(--spacing-md) auto var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-xxl);
+    background-color: #ffffffd1;
+    ;
+    border-radius: var(--border-radius-md);
+    box-shadow: 13px 10px 20px 3px var(--shadow-color);
+    text-align: center;
+    color: var(--primary-color);
+    z-index: 1;
+    position: relative;
+}
+
+.main-section .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-section h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-color);
+    text-align: right;
+}
+
+.main-section p,
+.main-section ul {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.main-section ul {
+    list-style: none;
+    padding: 0 auto;
+    text-align: left;
+}
+
+.main-section ul li::before {
+    content: "✔ ";
+    color: var(--accent-color);
+    margin-right: var(--spacing-sm);
+}
+
+.main-section ul .sub-list-item::before {
+    content: "↪ ";
+    color: var(--primary-color);
+    margin-right: var(--spacing-sm);
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grey);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 13px 10px 20px 3px var(--shadow-color);
+    margin: var(--spacing-md) auto;
+    padding: var(--spacing-md);
+}
+
+.info-card img {
+    max-width: 100%;
+    height: 60px;
+    margin: var(--spacing-md);
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    .main-section {
+        /* margin: 9.5rem auto var(--spacing-md); */
+        padding: var(--spacing-xl) var(--spacing-md);
+        width: 94vw;
+    }
+
+    .main-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-section p,
+    .main-section ul {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .info-card {
+        margin: var(--spacing-md) auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-card img {
+        height: 40px;
+        margin: var(--spacing-sm) auto;
+    }
+
+    .carousel-item {
+        height: 18rem;
+    }
+
+    .carousel-item img {
+        height: 15rem;
+    }
+
+    #skills .habilidades {
+        flex-direction: column;
+    }
+
+    #skills img {
+        height: auto;
+        max-height: 200px;
+    }
+
+    .hard_skill,
+    .soft_skill {
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-lg);
+        text-align: center;
+    }
+
+    .hab_soft li {
+        margin: var(--spacing-md) 0;
+    }
+
+  
+    .redes_sociais {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .redes_sociais img {
+        width: 2.5rem;
+    }
+
+    .cv-download a {
+        font-size: large;
+    }
+
+    .cv-download a:hover {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .info-card {
+        padding: var(--spacing-sm);
+    }
+}
