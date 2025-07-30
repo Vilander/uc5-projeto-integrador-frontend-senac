@@ -1,3 +1,29 @@
+:root {
+    --primary-color: #273345;
+    --secondary-color: #08439c;
+    --accent-color: #007bff;
+    --text-color: #333;
+    --light-bg: #ffffff37;
+    --light-grey: #EFEAE6;
+    --shadow-color: #9090907c;
+
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    --spacing-xxxl: 5rem;
+
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 12px;
+
+    --font-size-base: 1.4rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.2rem;
+}
+
 #bio-pessoal {
     margin-top: 12rem;
 }
@@ -68,7 +94,7 @@
 }
 
 #formulario {
-    margin-top: var(--spacing-xxxl);
+    margin-top: 12rem;
 }
 
 .formulario-contato .btn-success {
@@ -78,6 +104,10 @@
 
 .formulario-contato .btn-success:hover {
     background-color: var(--secondary-color);
+}
+
+#rede .info-card{
+    background-color: #ffffff5c;
 }
 
 .redes_sociais {
@@ -124,3 +154,4 @@
     padding: 1rem;
     text-align: center;
 }
+
