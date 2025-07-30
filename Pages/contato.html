@@ -96,10 +96,11 @@
                   <li><a class="dropdown-item" href="#curriculo">Download Currículo</a></li>
                 </ul>
               </li>
-              
+
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Digite aqui..." aria-label="Search" />
+            <form class="d-flex" role="search" action="search-results.html" method="GET">
+              <input class="form-control me-2" name="query" type="search" placeholder="Digite aqui..."
+                aria-label="Search" required>
               <button class="btn btn-outline-success" type="submit">Pesquisa</button>
             </form>
           </div>
@@ -141,7 +142,7 @@
                 required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-success" >Enviar</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
             <button type="reset" class="btn btn-secondary">Limpar</button>
           </form>
         </div>
@@ -170,13 +171,13 @@
         <div class="cv-download">
           <img src="../assets/—Pngtree—file download icon_4719240.png" alt="download">
           <a href="../assets/CV_TI_Vilander Costa_2025.pdf" download="CV_TI_Vilander Costa_2025.pdf">Download CV</a>
-          
+
         </div>
 
       </div>
     </section>
 
-    
+
     <aside id="WhatsApp" aria-label="Contato pelo WhatsApp">
       <h2 class="visually-hidden">Fale comigo pelo WhatsApp</h2>
       <a href="https://wa.me/5519993223509?text=Olá,%20tudo%20bem?" class="whatsapp-float" target="_blank"
