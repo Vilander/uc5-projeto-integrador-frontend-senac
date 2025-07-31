@@ -1,44 +1,44 @@
 :root {
-    --primary-color: #273345;
-    --secondary-color: #08439c;
-    --accent-color: #007bff;
-    --text-color: #333;
-    --light-bg: #ffffff37;
-    --light-grey: #EFEAE6;
-    --shadow-color: #9090907c;
+  --primary-color: #273345;
+  --secondary-color: #08439c;
+  --accent-color: #007bff;
+  --text-color: #333;
+  --light-bg: #ffffff37;
+  --light-grey: #EFEAE6;
+  --shadow-color: #9090907c;
 
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 3rem;
-    --spacing-xxl: 4rem;
-    --spacing-xxxl: 5rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  --spacing-xxxl: 5rem;
 
-    --border-radius-sm: 0.5rem;
-    --border-radius-md: 1rem;
-    --border-radius-lg: 12px;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 12px;
 
-    --font-size-base: 1.4rem;
-    --font-size-lg: 1.5rem;
-    --font-size-xl: 2rem;
-    --font-size-xxl: 2.2rem;
+  --font-size-base: 1.4rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.2rem;
 }
 
-a{
-    color: var(--primary-color);
+a {
+  color: var(--primary-color);
 }
 
 .post {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 2rem;
   transition: box-shadow 0.2s;
   border: 1px solid #e8ecef;
 }
 
 .post:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
   border-color: #b1c0cb;
 }
 
@@ -70,8 +70,8 @@ a{
   border-color: var(--secondary-color);
 }
 
-.post-1-topo{
-    margin-top: 8rem;
+.post-1-topo {
+  margin-top: 8rem;
 }
 
 /* WhatsApp botão flutuante */
