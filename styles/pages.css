@@ -134,6 +134,38 @@
     flex-direction: column;
 }
 
+.email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    flex-direction: column;
+}
+
+.email-link:hover {
+    color: var(--secondary-color);
+}
+
+.email-icon {
+    transition: transform 0.3s ease;
+}
+
+.email-icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.email-text {
+    margin: 0;
+    font-weight: normal;
+}
+
+.email-text:hover {
+    font-size: large;
+    font-weight: bold;
+}
+
 #formulario .info-card img:hover {
     width: 50rem;
 }
