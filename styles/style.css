@@ -169,8 +169,54 @@ body {
   transition: color 0.3s ease;
 }
 
-.menu-lateral a:hover {
-  color: #EFEAE6;
+.menu-lateral a::after,
+.menu-lateral a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0e0244, #737575);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.menu-lateral a::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.menu-lateral a:hover::after,
+.menu-lateral a:hover::before {
+  transform: scaleX(1);
+}
+
+.botao-menu {
+  /* background-color: #f39c12; */
+  /* color: white; */
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+
+.botao-menu:hover {
+  color: #c5caad;
+  animation: rotate3d 0.7s;
+}
+
+@keyframes rotate3d {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(180deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
 }
 
 .perfil-destaque {
